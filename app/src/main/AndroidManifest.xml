@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.developer.abhinavraj.servify_app">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".admin.activity.HomeActivity"/>
+        <activity android:name=".admin.activity.LoginActivity" />
+        <activity android:name=".client.activity.MainActivity" />
+        <activity android:name=".admin.activity.signUp.PasswordActivity" />
+        <activity android:name=".admin.activity.signUp.AddressActivity" />
+        <activity android:name=".admin.activity.signUp.SignUpActivity" />
+        <activity android:name=".client.activity.ProfileActivity" />
+        <activity android:name=".client.activity.HomeActivity" />
+        <activity android:name=".client.activity.signUp.PasswordActivity" />
+        <activity android:name=".client.activity.signUp.AddressActivity" />
+        <activity android:name=".client.activity.signUp.SignUpActivity" />
+        <activity android:name=".client.activity.LoginActivity" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <activity android:name=".admin.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="false" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="false" />
+    </application>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+</manifest>
