@@ -1,7 +1,7 @@
 # Home service app
 This was my internship project, built with an intention to provide jobs to low wage/ daily wage workers after the lockdown lifts up in the midst of the Covid-19 pandemic.
 
-#How to install?
+# How to install?
 
 Open the complete folder in android studio and simply run the application in your android phone or on your emulator.
 
